@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Game Plaza</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+	.city {
+	float: left;
+	margin: 5px;
+	padding: 15px;
+	width: 250px;
+	height: 150px;
+	border: 1px solid black;
+	}
+        .city:hover {
+        box-shadow: 2px 2px 3px #000000;
+        } 
+	.footer {
+	position: absolute; 
+    background-color:black;
+    color:white;
+    clear:both;
+	bottom: 0;
+	width: 70%;
+	left: 50%;
+    text-align:center;
+	padding:5px;	
+	transform: translate(-50%,-0%);	
+	}
+#github svg {
+	transition: all 1s;
+	fill: #222;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 0;
+	width: 80px;
+	height: 80px;
+}
+#github:hover svg {
+	width: 160px;
+	height: 160px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<div class="jumbotron">
+  <h1>Game Plaza</h1> 
+  <p>游戏广场!</p> 
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+
+  <div class="city">
+    <a href ="2048/index.html"><h2>2048</h2></a>
+    <p>2048</p>
+  </div>
+  
+  <div class="city">
+    <a href ="Tetris/index.html"><h2>Tetris</h2></a>
+    <p>俄罗斯方块</p>
+  </div>
+  
+  <div class="city">
+    <a href ="Snake/index.html"><h2>Snake</h2></a>
+    <p>贪吃蛇</p>
+  </div>
+  
+  <div class="city">
+    <a href ="Roshambo/index.html"><h2>Roshambo</h2></a>
+    <p>石头剪刀布</p>
+  </div>
+
+  <div class="city">
+   <a href ="https://cavalierchallenge.com"><h2>Cavalier</h2></a>
+   <p>马</p>
+  </div>  
+  
+</div>
+</div>
+	
+	<div class="footer">
+	Create by LinWang
+	</div>
+  <script src="../live2d-widget/autoload.js"></script>
+  <script type="text/javascript" src="js/canvas-nest.min.js"></script>
+<canvas height="926" width="1920" style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;" id="c_n1"></canvas>
+</body>
+</html>
